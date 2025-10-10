@@ -1,0 +1,6 @@
+@Online_Electronic_Store.Api_HostAddress = http://localhost:5227
+
+GET {{Online_Electronic_Store.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
