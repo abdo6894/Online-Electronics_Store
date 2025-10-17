@@ -1,0 +1,29 @@
+﻿# Build folders
+bin/
+obj/
+.vs/
+
+# User files
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Configuration files
+**/appsettings.Development.json
+**/appsettings.Local.json
+
+# Secrets / certificates
+secrets.json
+*.pfx
+*.snk
+
+# Node / front-end stuff
+node_modules/
+wwwroot/lib/
+wwwroot/dist/
+
+# Misc
+Thumbs.db
+.DS_Store

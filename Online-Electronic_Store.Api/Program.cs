@@ -1,8 +1,14 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using DAL.Data.Context;
+using Microsoft.EntityFrameworkCore;
+using WebAPI.Services;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Register application services
+RegisterationServiceHelper.RegisterationService(builder);
 
 // Add services to the container.
 builder.Services.AddControllers();
-
 // ✅ Add Swagger services
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
