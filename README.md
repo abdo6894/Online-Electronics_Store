@@ -5,7 +5,7 @@ An online platform for selling and buying electronic products such as phones, la
 
 This is the official repository for the **Online Electronic Store** graduation project.
 
----
+----
 
 ## 🚀 Getting Started
 
