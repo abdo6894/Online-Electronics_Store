@@ -1,9 +1,3 @@
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.sourcelink.json
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\bin\Debug\net9.0\DAL.deps.json
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\bin\Debug\net9.0\DAL.dll
@@ -11,6 +5,12 @@ D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\bin\Debug\net9.0\DAL.pdb
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\bin\Debug\net9.0\DAL.xml
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\bin\Debug\net9.0\Domain.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\bin\Debug\net9.0\Domain.pdb
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.sourcelink.json
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\DAL.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\DAL\obj\Debug\net9.0\refint\DAL.dll

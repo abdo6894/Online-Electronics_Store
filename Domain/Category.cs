@@ -1,13 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿    using System.ComponentModel.DataAnnotations;
 
-namespace Domain
-{
-    public class Category
+    namespace Domain
     {
-        [Key]
-        public Guid Id { get; set; }
-        public string? Name { get; set; }
+        public class Category : BaseEntity
+    {
+            
+            public string? Name { get; set; }
 
-        public ICollection<Product>? Products { get; set; }
+            public virtual ICollection<Product>? Products { get; set; }
+        }
     }
-}

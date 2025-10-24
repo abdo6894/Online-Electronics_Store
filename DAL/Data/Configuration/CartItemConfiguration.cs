@@ -22,6 +22,7 @@ namespace BL.Data.Configuration
 
             builder.Property(ci => ci.UserId)
                    .HasMaxLength(100);
+
         }
     }
 }

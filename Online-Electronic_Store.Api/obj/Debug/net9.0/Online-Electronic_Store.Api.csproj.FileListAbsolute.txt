@@ -4,6 +4,7 @@ D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.AssemblyInfoInputs.cache
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.AssemblyInfo.cs
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.csproj.CoreCompileInputs.cache
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.sourcelink.json
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\appsettings.Development.json
@@ -14,9 +15,12 @@ D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Online-Electronic_Store.Api.runtimeconfig.json
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Online-Electronic_Store.Api.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Online-Electronic_Store.Api.pdb
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\AutoMapper.dll
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Azure.Core.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Azure.Identity.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Humanizer.dll
+D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -163,7 +167,6 @@ D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\DAL.pdb
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\DAL.xml
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Domain.pdb
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\rjimswa.dswa.cache.json
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
@@ -179,4 +182,3 @@ D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.pdb
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\Online-Electronic_Store.Api.genruntimeconfig.cache
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\obj\Debug\net9.0\ref\Online-Electronic_Store.Api.dll
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
