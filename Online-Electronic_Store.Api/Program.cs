@@ -18,13 +18,11 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
-// ✅ Enable Swagger only in development
-if (app.Environment.IsDevelopment())
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+    c.RoutePrefix = string.Empty; // ✅ Swagger في الصفحة الرئيسية
+});
 
 app.UseHttpsRedirection();
 app.UseAuthentication();  
@@ -41,7 +39,7 @@ using (var scope = app.Services.CreateScope())
     {
         var context = services.GetRequiredService<AppDbContext>();
         var userManager = services.GetRequiredService<UserManager<AppUser>>();
-        var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+        var roleManager = services.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
         var config = services.GetRequiredService<IConfiguration>(); 
 
         await ContextConfig.SeedDataAsync(context, userManager, roleManager, config);

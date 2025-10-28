@@ -16,5 +16,17 @@
         <member name="M:DAL.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:DAL.Migrations.AddUsersAndAuth">
+            <inheritdoc />
+        </member>
+        <member name="M:DAL.Migrations.AddUsersAndAuth.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DAL.Migrations.AddUsersAndAuth.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DAL.Migrations.AddUsersAndAuth.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
