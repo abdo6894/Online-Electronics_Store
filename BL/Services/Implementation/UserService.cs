@@ -1,92 +1,114 @@
 ﻿using BL.Dtos.AppUserDtos;
 using BL.Services.Interfaces;
-using DAL.Data.Context;
 using Domain;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace BL.Services.Implementation
+public class UserService : IUserService
 {
-    public class UserService : IUserService
+    private readonly UserManager<AppUser> _userManager;
+    private readonly IConfiguration _config;
+
+    public UserService(UserManager<AppUser> userManager, IConfiguration config)
     {
-        private readonly AppDbContext _db;
-        private readonly IConfiguration _config;
-        private readonly PasswordHasher<AppUser> _hasher;
+        _userManager = userManager;
+        _config = config;
+    }
 
-        public UserService(AppDbContext db, IConfiguration config)
+    // Register
+    public async Task<AuthResultDto> RegisterAsync(RegisterDto dto)
+    {
+        if (await _userManager.FindByEmailAsync(dto.Email) != null)
+            return new AuthResultDto { Success = false, Error = "Email already taken" };
+
+        var user = new AppUser
         {
-            _db = db;
-            _config = config;
-            _hasher = new PasswordHasher<AppUser>();
-        }
-
-        public async Task<AuthResultDto> RegisterAsync(RegisterDto dto)
-        {
-            if (await _db.Users.AnyAsync(u => u.Email == dto.Email))
-                return new AuthResultDto { Success = false, Error = "Email already taken" };
-
-            var user = new AppUser
-            {
-                FullName = dto.FullName,
-                Email = dto.Email,
-                Role = "User", // default
-                CreatedAt = DateTime.UtcNow
-            };
-
-            user.PasswordHash = _hasher.HashPassword(user, dto.Password);
-
-            _db.Users.Add(user);
-            await _db.SaveChangesAsync();
-
-            var token = GenerateToken(user);
-            return new AuthResultDto { Success = true, Token = token };
-        }
-
-        public async Task<AuthResultDto> LoginAsync(LoginDto dto)
-        {
-            var user = await _db.Users.SingleOrDefaultAsync(u => u.Email == dto.Email);
-            if (user == null)
-                return new AuthResultDto { Success = false, Error = "Invalid credentials" };
-
-            var verify = _hasher.VerifyHashedPassword(user, user.PasswordHash, dto.Password);
-            if (verify == PasswordVerificationResult.Failed)
-                return new AuthResultDto { Success = false, Error = "Invalid credentials" };
-
-            var token = GenerateToken(user);
-            return new AuthResultDto { Success = true, Token = token };
-        }
-
-        private string GenerateToken(AppUser user)
-        {
-            var jwt = _config.GetSection("Jwt");
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt["Key"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Email?? ""),
-            new Claim("id", user.Id.ToString()),
-            new Claim(ClaimTypes.Role, user.Role ?? "User")
+            UserName = dto.Email,
+            Email = dto.Email,
+            Fullname = dto.FullName
         };
 
-            var token = new JwtSecurityToken(
-                issuer: jwt["Issuer"],
-                audience: jwt["Audience"],
-                claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(int.Parse(jwt["DurationInMinutes"] ?? "60")),
-                signingCredentials: creds
-            );
+        var result = await _userManager.CreateAsync(user, dto.Password);
+        if (!result.Succeeded)
+            return new AuthResultDto
+            {
+                Success = false,
+                Error = string.Join("; ", result.Errors.Select(e => e.Description))
+            };
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+        await _userManager.AddToRoleAsync(user, "User");
+        var roles = await _userManager.GetRolesAsync(user);
+
+        var userDto = new UserDto
+        {
+            Id = user.Id,
+            Fullname = user.Fullname,
+            Email = user.Email,
+            Role = roles.FirstOrDefault()
+        };
+
+        return new AuthResultDto
+        {
+            Success = true,
+            User = userDto
+        };
+    }
+
+    // Login
+    public async Task<AuthResultDto> LoginAsync(LoginDto dto)
+    {
+        var user = await _userManager.FindByEmailAsync(dto.Email);
+        if (user == null) return new AuthResultDto { Success = false, Error = "Invalid credentials" };
+
+        var valid = await _userManager.CheckPasswordAsync(user, dto.Password);
+        if (!valid) return new AuthResultDto { Success = false, Error = "Invalid credentials" };
+
+        var roles = await _userManager.GetRolesAsync(user);
+
+        var token = GenerateToken(user, roles.FirstOrDefault() ?? "User");
+        var userDto = new UserDto
+        {
+            Id = user.Id,
+            Fullname = user.Fullname,
+            Email = user.Email,
+            Role = roles.FirstOrDefault()
+        };
+
+        return new AuthResultDto
+        {
+            Success = true,
+            User = userDto,
+            Token = token
+        };
+    }
+
+    // توليد JWT
+    private string GenerateToken(AppUser user, string role)
+    {
+        var jwt = _config.GetSection("Jwt");
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt["Key"]!));
+        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+        var claims = new List<Claim>
+        {
+            new Claim(JwtRegisteredClaimNames.Sub, user.Email ?? ""),
+            new Claim("id", user.Id.ToString()),
+            new Claim("fullname", user.Fullname ?? ""),
+            new Claim(ClaimTypes.Role, role)
+        };
+
+        var token = new JwtSecurityToken(
+            issuer: jwt["Issuer"],
+            audience: jwt["Audience"],
+            claims: claims,
+            expires: DateTime.UtcNow.AddMinutes(int.Parse(jwt["DurationInMinutes"] ?? "60")),
+            signingCredentials: creds
+        );
+
+        return new JwtSecurityTokenHandler().WriteToken(token);
     }
 }

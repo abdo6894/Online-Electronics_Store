@@ -11,17 +11,19 @@ using System.Text;
 using BL.Services.Interfaces.Generic;
 using BL.Services.Implementation.Generic;
 using AutoMapper;
+using BL.Services.Interfaces;
+using BL.Services.Implementation;
 namespace WebAPI.Services
 {
     public static class RegisterationServiceHelper
     {
         public static void RegisterationService(WebApplicationBuilder builder)
         {
-            // ✅ SQL Server
+            // SQL Server
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            // ✅ Identity configuration
+            //  Identity configuration
             builder.Services.AddIdentity<AppUser, IdentityRole<Guid>>(options =>
             {
                 options.Password.RequiredLength = 6;
@@ -33,7 +35,8 @@ namespace WebAPI.Services
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
 
-            // ✅ JWT Authentication setup
+            //  JWT Authentication setup
+
             var jwtSettings = builder.Configuration.GetSection("Jwt");
             var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
 
@@ -59,6 +62,7 @@ namespace WebAPI.Services
 
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             builder.Services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>));
+            builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
             builder.Services.AddScoped<IMappingService, MappingService>();
 

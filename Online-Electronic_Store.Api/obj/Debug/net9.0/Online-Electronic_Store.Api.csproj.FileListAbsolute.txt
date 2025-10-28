@@ -75,13 +75,11 @@ D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Composition.TypedParts.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Drawing.Common.dll
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Formats.Asn1.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Memory.Data.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Runtime.Caching.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Security.Permissions.dll
-D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Text.Json.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\System.Windows.Extensions.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Online-Electronic_Store.Api\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll

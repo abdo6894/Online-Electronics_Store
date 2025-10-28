@@ -30,9 +30,11 @@ namespace Online_Electronic_Store.Api.Controllers
             return Ok(res);
         }
 
-        //[HttpGet("test")]
-        //[Authorize]
-        //public IActionResult Test() => Ok(new { Message = "You are authenticated", User = User.Identity.Name });
+        [HttpGet("test")]
+        [Authorize]
+        public IActionResult Test() => Ok(new { Message = "You are authenticated", User = User.Identity.Name });
+
+
         [HttpGet("me")]
         [Authorize]
         public IActionResult Me()
