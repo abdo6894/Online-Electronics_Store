@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "Online-Electronic_Store.Api/1.0.0": {
         "dependencies": {
-          "BL": "1.0.0",
+          "Application": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.10",
           "Microsoft.AspNetCore.OpenApi": "9.0.6",
           "Microsoft.EntityFrameworkCore.Design": "9.0.10",
@@ -1119,28 +1119,14 @@
           }
         }
       },
-      "BL/1.0.0": {
+      "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "DAL": "1.0.0"
+          "Infrastructure": "1.0.0"
         },
         "runtime": {
-          "BL.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "DAL/1.0.0": {
-        "dependencies": {
-          "Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.10",
-          "Microsoft.EntityFrameworkCore": "9.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.10"
-        },
-        "runtime": {
-          "DAL.dll": {
+          "Application.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1152,6 +1138,20 @@
         },
         "runtime": {
           "Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.10",
+          "Microsoft.EntityFrameworkCore": "9.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.10"
+        },
+        "runtime": {
+          "Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1788,17 +1788,17 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "BL/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DAL/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

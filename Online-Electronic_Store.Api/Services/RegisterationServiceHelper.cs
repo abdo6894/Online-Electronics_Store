@@ -1,18 +1,20 @@
-﻿using BL.Mapping;
+﻿
 using DAL.Data.Context;
-using DAL.Repositories.Implementations;
-using DAL.Repositories.Interfaces;
 using Domain;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using BL.Services.Interfaces.Generic;
-using BL.Services.Implementation.Generic;
 using AutoMapper;
-using BL.Services.Interfaces;
-using BL.Services.Implementation;
+using Infrastructure.Repositories.Interfaces;
+using Infrastructure.Repositories.Implementations;
+using Application.Mapping;
+using Application.Services.Interfaces.Generic;
+using Application.Services.Implementation.Generic;
+using Application.Services.Interfaces;
+using Application.Services.Implementation;
+using Infrastructure.Repositories.Implementation;
 namespace WebAPI.Services
 {
     public static class RegisterationServiceHelper
@@ -65,6 +67,18 @@ namespace WebAPI.Services
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
             builder.Services.AddScoped<IMappingService, MappingService>();
+            builder.Services.AddScoped<IProductRepository, ProductRepo>();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+            builder.Services.AddScoped<ICartItemService, CartItemService>();
+            builder.Services.AddScoped<IRefreshTokeanService, RefreshTokeanService>();
+
+
+
+
+
 
 
 

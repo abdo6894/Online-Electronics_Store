@@ -3,20 +3,64 @@
   "WorkspaceRootPath": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\controllers\\cartitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\controllers\\cartitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\services\\contextconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\services\\contextconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\dtos\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\dtos\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\dtos\\refreshtokencreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\dtos\\refreshtokencreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\dtos\\orderitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\dtos\\orderitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\dtos\\ordercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\dtos\\ordercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\services\\implementation\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\services\\implementation\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\services\\implementation\\refreshtokeanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\services\\implementation\\refreshtokeanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\application\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\infrastructure\\repositories\\implementation\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\implementation\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\infrastructure\\repositories\\interfaces\\iproductreoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\interfaces\\iproductreoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\infrastructure\\repositories\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\services\\registerationservicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,67 +90,210 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\AuthenticationController.cs*",
-              "RelativeToolTip": "Online-Electronic_Store.Api\\Controllers\\AuthenticationController.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAgwBsAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ProductCreateDto.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\ProductCreateDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\ProductCreateDto.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\ProductCreateDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\ProductCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T17:29:36.188Z",
+              "WhenOpened": "2025-10-31T02:42:20.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Online-Electronic_Store.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-28T17:29:27.053Z",
+              "DocumentIndex": 6,
+              "Title": "OrderItemCreateDto.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\OrderItemCreateDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\OrderItemCreateDto.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\OrderItemCreateDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\OrderItemCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:42:17.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Program.cs",
-              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Program.cs*",
-              "RelativeToolTip": "Online-Electronic_Store.Api\\Program.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "OrderCreateDto.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\OrderCreateDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\OrderCreateDto.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\OrderCreateDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\OrderCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T17:27:24.928Z",
+              "WhenOpened": "2025-10-31T02:42:14.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\CategoryDto.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\CategoryDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\CategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:42:09.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ContextConfig.cs",
-              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Services\\ContextConfig.cs",
-              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Services\\ContextConfig.cs",
-              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Services\\ContextConfig.cs",
-              "RelativeToolTip": "Online-Electronic_Store.Api\\Services\\ContextConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Title": "CartItemDto.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\CartItemDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\CartItemDto.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\CartItemDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\CartItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T17:24:53.723Z",
+              "WhenOpened": "2025-10-31T02:41:42.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartItemController.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\CartItemController.cs",
+              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Controllers\\CartItemController.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\CartItemController.cs*",
+              "RelativeToolTip": "Online-Electronic_Store.Api\\Controllers\\CartItemController.cs*",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:38:48.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RefreshTokeanService.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Services\\Implementation\\RefreshTokeanService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Implementation\\RefreshTokeanService.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Services\\Implementation\\RefreshTokeanService.cs",
+              "RelativeToolTip": "Application\\Services\\Implementation\\RefreshTokeanService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:30:49.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Online-Electronic_Store.Api\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:24:57.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Online-Electronic_Store.Api\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:43:47.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "RefreshTokenCreateDto.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\RefreshTokenCreateDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\RefreshTokenCreateDto.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Dtos\\RefreshTokenCreateDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\RefreshTokenCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:42:22.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Services\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Interfaces\\IProductService.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Services\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "Application\\Services\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:30:36.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductRepo.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Infrastructure\\Repositories\\Implementation\\ProductRepo.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\Implementation\\ProductRepo.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Infrastructure\\Repositories\\Implementation\\ProductRepo.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\Implementation\\ProductRepo.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:11:56.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Infrastructure\\Repositories\\Interfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\Interfaces\\IGenericRepository.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Infrastructure\\Repositories\\Interfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\Interfaces\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:11:55.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IProductReoi.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Infrastructure\\Repositories\\Interfaces\\IProductReoi.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\Interfaces\\IProductReoi.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Infrastructure\\Repositories\\Interfaces\\IProductReoi.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\Interfaces\\IProductReoi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:10:41.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "RegisterationServiceHelper.cs",
               "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Services\\RegisterationServiceHelper.cs",
               "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Services\\RegisterationServiceHelper.cs",
               "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Services\\RegisterationServiceHelper.cs",
               "RelativeToolTip": "Online-Electronic_Store.Api\\Services\\RegisterationServiceHelper.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAqwDcAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEUAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T17:23:54.083Z",
+              "WhenOpened": "2025-10-31T02:09:26.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Services\\Implementation\\ProductService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Implementation\\ProductService.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Services\\Implementation\\ProductService.cs",
+              "RelativeToolTip": "Application\\Services\\Implementation\\ProductService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:08:14.507Z",
               "EditorCaption": ""
             }
           ]

@@ -1,46 +1,74 @@
 ﻿using DAL.Data.Context;
 using Domain;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using WebAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Register application services
+// ===================== Register Services =====================
 RegisterationServiceHelper.RegisterationService(builder);
 
-// Add services to the container.
-builder.Services.AddControllers();
-// ✅ Add Swagger services
+builder.Services.AddControllers()
+    .AddJsonOptions(x =>
+        x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
+
+
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    // Add JWT Authorization to Swagger
+    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Description = "Enter 'Bearer' [space] and then your valid token"
+    });
+    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[]{}
+        }
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
-    c.RoutePrefix = string.Empty; // ✅ Swagger في الصفحة الرئيسية
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "E-Commerce API v1");
+    c.RoutePrefix = string.Empty; // Swagger في الصفحة الرئيسية
 });
 
+
 app.UseHttpsRedirection();
-app.UseAuthentication();  
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
 
-// Seed initial data
+// ===================== Seed Data =====================
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-
     try
     {
         var context = services.GetRequiredService<AppDbContext>();
         var userManager = services.GetRequiredService<UserManager<AppUser>>();
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
-        var config = services.GetRequiredService<IConfiguration>(); 
+        var config = services.GetRequiredService<IConfiguration>();
 
         await ContextConfig.SeedDataAsync(context, userManager, roleManager, config);
     }
@@ -50,6 +78,5 @@ using (var scope = app.Services.CreateScope())
         logger.LogError(ex, "Error occurred while seeding the database.");
     }
 }
-
 
 app.Run();

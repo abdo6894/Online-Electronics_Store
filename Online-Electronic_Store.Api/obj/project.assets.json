@@ -1786,35 +1786,19 @@
           }
         }
       },
-      "BL/1.0.0": {
+      "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "DAL": "1.0.0"
+          "Infrastructure": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/BL.dll": {}
+          "bin/placeholder/Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BL.dll": {}
-        }
-      },
-      "DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.10",
-          "Microsoft.EntityFrameworkCore": "9.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.10"
-        },
-        "compile": {
-          "bin/placeholder/DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DAL.dll": {}
+          "bin/placeholder/Application.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -1828,6 +1812,22 @@
         },
         "runtime": {
           "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.10",
+          "Microsoft.EntityFrameworkCore": "9.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
         }
       }
     }
@@ -5211,25 +5211,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "BL/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
-      "path": "../BL/BL.csproj",
-      "msbuildProject": "../BL/BL.csproj"
-    },
-    "DAL/1.0.0": {
-      "type": "project",
-      "path": "../DAL/DAL.csproj",
-      "msbuildProject": "../DAL/DAL.csproj"
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
     },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "BL >= 1.0.0",
+      "Application >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.10",
       "Microsoft.AspNetCore.OpenApi >= 9.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.10",
@@ -5269,8 +5269,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\BL\\BL.csproj": {
-              "projectPath": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\BL\\BL.csproj"
+            "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Application.csproj": {
+              "projectPath": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Application\\Application.csproj"
             }
           }
         }
