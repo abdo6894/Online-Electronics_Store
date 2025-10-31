@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Domain\\Domain.csproj": {}
+    "E:\\Online-Electronics_Store\\My-Github\\Online-Electronics_Store\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Domain\\Domain.csproj": {
+    "E:\\Online-Electronics_Store\\My-Github\\Online-Electronics_Store\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\Online-Electronics_Store\\My-Github\\Online-Electronics_Store\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\win11\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Domain\\obj\\",
+        "projectPath": "E:\\Online-Electronics_Store\\My-Github\\Online-Electronics_Store\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Youse\\.nuget\\packages\\",
+        "outputPath": "E:\\Online-Electronics_Store\\My-Github\\Online-Electronics_Store\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\win11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Youse\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
