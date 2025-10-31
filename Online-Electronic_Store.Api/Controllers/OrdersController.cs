@@ -16,18 +16,18 @@ namespace Online_Electronic_Store.Api.Controllers
     public class OrdersController : ControllerBase
     {
         #region Fields
-        private readonly IGenericService<Order, OrderDto> _orderService;
+        private readonly IOrderService _orderService;
         private readonly IProductService _productService;
-        private readonly IGenericService<OrderItem, OrderItemDto> _orderItemService;
-        private readonly IGenericService<CartItem, CartItemDto> _cartService;
+        private readonly IOrderItemService _orderItemService;
+        private readonly ICartItemService _cartService;
         private readonly ILogger<OrdersController> _logger;
         #endregion
 
         #region Constructor
         public OrdersController(
-          IGenericService<Order, OrderDto> orderService,
-          IGenericService<OrderItem, OrderItemDto> orderItemService,
-          IGenericService<CartItem, CartItemDto> cartService,
+          IOrderService orderService,
+          IOrderItemService orderItemService,
+          ICartItemService cartService,
            IProductService productService,
           ILogger<OrdersController> logger)
         {
@@ -39,12 +39,16 @@ namespace Online_Electronic_Store.Api.Controllers
         }
         #endregion
 
+        #region EndPoints
         [HttpPost("create")]
         public async Task<IActionResult> CreateOrder()
         {
             try
             {
-                var userId = Guid.Parse(User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value);
+                var userId = GetUserIdFromClaims();
+                if (userId == null)
+                    return Unauthorized(ApiResponse<string>.FailResponse("Invalid user token"));
+
                 var cartItems = (await _cartService.GetAll())
                                 .Where(c => c.UserId == userId)
                                 .ToList();
@@ -110,7 +114,9 @@ namespace Online_Electronic_Store.Api.Controllers
         {
             try
             {
-                var userId = Guid.Parse(User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value);
+                var userId = GetUserIdFromClaims();
+                if (userId == null)
+                    return Unauthorized(ApiResponse<string>.FailResponse("Invalid user token"));
                 var orders = (await _orderService.GetAll())
                              .Where(o => o.UserId == userId)
                              .ToList();
@@ -139,6 +145,18 @@ namespace Online_Electronic_Store.Api.Controllers
                 return StatusCode(500, ApiResponse<string>.FailResponse("Internal server error"));
             }
         }
-    }
+        private Guid? GetUserIdFromClaims()
+        {
 
-}
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "id")?.Value;
+            if (Guid.TryParse(userIdClaim, out var userId))
+                return userId;
+
+            return null;
+        } 
+        #endregion
+
+    }
+     
+
+    }

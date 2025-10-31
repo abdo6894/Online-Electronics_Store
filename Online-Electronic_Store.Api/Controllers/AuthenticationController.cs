@@ -11,9 +11,14 @@ namespace Online_Electronic_Store.Api.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
+        #region Fields
         private readonly IUserService _userService;
+        #endregion
+        #region Constructor
         public AuthenticationController(IUserService userService) { _userService = userService; }
+        #endregion
 
+        #region EndPoints
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto dto)
         {
@@ -42,6 +47,7 @@ namespace Online_Electronic_Store.Api.Controllers
         {
             var email = User.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Sub)?.Value;
             return Ok(new { Email = email });
-        }
+        } 
+        #endregion
     }
 }

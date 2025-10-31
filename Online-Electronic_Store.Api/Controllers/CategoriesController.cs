@@ -28,8 +28,7 @@ namespace Online_Electronic_Store.Api.Controllers
 
         #endregion
 
-
-
+        #region EndPoints
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -122,7 +121,9 @@ namespace Online_Electronic_Store.Api.Controllers
                 _logger.LogError(ex, $"Error deleting category {id}");
                 return StatusCode(500, ApiResponse<string>.FailResponse("Internal server error"));
             }
-        }
+        } 
+        #endregion
+
     }
 }
 
