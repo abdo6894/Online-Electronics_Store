@@ -48,7 +48,12 @@ namespace Infrastructure.Repositories.Implementations
         {
             try
             {
-                var entity = await GetById(Id);
+                var entity = _dbSet.Local.FirstOrDefault(e => e.Id == Id);
+                if (entity == null)
+                {
+                    // جرب Find بدل GetById لتجيب الكائن متتبع أو جديد مباشرة
+                    entity = await _dbSet.FindAsync(Id);
+                }
                 if (entity != null)
                 {
                     _dbSet.Remove(entity);
@@ -63,7 +68,8 @@ namespace Infrastructure.Repositories.Implementations
             }
         }
 
-        public  async Task<List<T>> GetAll()
+
+        public async Task<List<T>> GetAll()
         {
             try
             {
