@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "Online_Electronic_Store.Api.Controllers.AuthenticationController",
+    "Method": "GetClaims",
+    "RelativePath": "api/Authentication/claims",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Online_Electronic_Store.Api.Controllers.AuthenticationController",
     "Method": "Login",
     "RelativePath": "api/Authentication/login",
     "HttpMethod": "POST",

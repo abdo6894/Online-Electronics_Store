@@ -34,6 +34,14 @@ namespace Online_Electronic_Store.Api.Controllers
         [Authorize]
         public IActionResult Test() => Ok(new { Message = "You are authenticated", User = User.Identity!.Name });
 
+        [HttpGet("claims")]
+        [Authorize]
+        public IActionResult GetClaims()
+        {
+            var claims = User.Claims.Select(c => new { c.Type, c.Value }).ToList();
+            return Ok(claims);
+        }
+
 
 
         [HttpGet("me")]
