@@ -28,9 +28,7 @@ namespace Online_Electronic_Store.Api.Controllers
 
         #endregion
 
-
-
-
+        #region EndPoints
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -123,6 +121,9 @@ namespace Online_Electronic_Store.Api.Controllers
                 return StatusCode(500, ApiResponse<string>.FailResponse("Internal server error"));
             }
         }
+        #endregion
+
     }
+
 }
 

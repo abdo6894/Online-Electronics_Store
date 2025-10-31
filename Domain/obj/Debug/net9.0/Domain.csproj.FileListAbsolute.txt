@@ -11,3 +11,16 @@ D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Domain\obj\Debug\net9.0\Domain.
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Domain\obj\Debug\net9.0\refint\Domain.dll
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Domain\obj\Debug\net9.0\Domain.pdb
 D:\MyProjects\WepAPI\Online-Electronic_Store.Api\Domain\obj\Debug\net9.0\ref\Domain.dll
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\bin\Debug\net9.0\Domain.deps.json
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\bin\Debug\net9.0\Domain.dll
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\bin\Debug\net9.0\Domain.pdb
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\Domain.csproj.AssemblyReference.cache
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\Domain.sourcelink.json
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\Domain.dll
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\refint\Domain.dll
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\Domain.pdb
+E:\Online-Electronics_Store\My-Github\Online-Electronics_Store\Domain\obj\Debug\net9.0\ref\Domain.dll

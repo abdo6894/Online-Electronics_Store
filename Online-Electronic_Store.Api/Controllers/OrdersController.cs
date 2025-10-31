@@ -16,18 +16,18 @@ namespace Online_Electronic_Store.Api.Controllers
     public class OrdersController : ControllerBase
     {
         #region Fields
-        private readonly IGenericService<Order, OrderDto> _orderService;
+        private readonly IOrderService _orderService;
         private readonly IProductService _productService;
-        private readonly IGenericService<OrderItem, OrderItemDto> _orderItemService;
-        private readonly IGenericService<CartItem, CartItemDto> _cartService;
+        private readonly IOrderItemService _orderItemService;
+        private readonly ICartItemService _cartService;
         private readonly ILogger<OrdersController> _logger;
         #endregion
 
         #region Constructor
         public OrdersController(
-          IGenericService<Order, OrderDto> orderService,
-          IGenericService<OrderItem, OrderItemDto> orderItemService,
-          IGenericService<CartItem, CartItemDto> cartService,
+         IOrderService orderService,
+         IOrderItemService orderItemService,
+          ICartItemService cartService,
            IProductService productService,
           ILogger<OrdersController> logger)
         {
@@ -39,6 +39,7 @@ namespace Online_Electronic_Store.Api.Controllers
         }
         #endregion
 
+        #region EndPoints
         [HttpPost("create")]
         public async Task<IActionResult> CreateOrder()
         {
@@ -151,7 +152,9 @@ namespace Online_Electronic_Store.Api.Controllers
             if (Guid.TryParse(userIdClaim, out var userId))
                 return userId;
             return null;
-        }
+        } 
+        #endregion
+
 
     }
 

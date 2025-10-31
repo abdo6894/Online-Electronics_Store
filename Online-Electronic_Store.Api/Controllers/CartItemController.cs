@@ -17,13 +17,13 @@ namespace Online_Electronic_Store.Api.Controllers
     public class CartController : ControllerBase
     {
         #region Fields
-        private readonly IGenericService<CartItem, CartItemDto> _cartService;
+        private readonly ICartItemService _cartService;
         private readonly ILogger<CartController> _logger;
 
         #endregion
 
         #region Constructor
-        public CartController(IGenericService<CartItem, CartItemDto> cartService,
+        public CartController(ICartItemService cartService,
                             ILogger<CartController> logger)
         {
             _cartService = cartService;
@@ -31,7 +31,7 @@ namespace Online_Electronic_Store.Api.Controllers
         }
         #endregion
 
-        [HttpGet]
+        #region EndPoints
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -122,7 +122,9 @@ namespace Online_Electronic_Store.Api.Controllers
                 return userId;
 
             return null;
-        }
+        } 
+        #endregion
+
 
     }
 }
