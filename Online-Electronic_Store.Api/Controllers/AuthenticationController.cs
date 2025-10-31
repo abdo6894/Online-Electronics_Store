@@ -1,5 +1,5 @@
-﻿using BL.Dtos.AppUserDtos;
-using BL.Services.Interfaces;
+﻿using Application.Dtos.AppUserDtos;
+using Application.Services.Interfaces.Generic;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -32,7 +32,8 @@ namespace Online_Electronic_Store.Api.Controllers
 
         [HttpGet("test")]
         [Authorize]
-        public IActionResult Test() => Ok(new { Message = "You are authenticated", User = User.Identity.Name });
+        public IActionResult Test() => Ok(new { Message = "You are authenticated", User = User.Identity!.Name });
+
 
 
         [HttpGet("me")]
