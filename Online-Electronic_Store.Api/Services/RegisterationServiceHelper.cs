@@ -68,6 +68,9 @@ namespace WebAPI.Services
             builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
             builder.Services.AddScoped<IMappingService, MappingService>();
             builder.Services.AddScoped<IProductRepository, ProductRepo>();
+            builder.Services.AddScoped<ICartRepository, CartRepository>();
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+            builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IOrderService, OrderService>();

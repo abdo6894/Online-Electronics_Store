@@ -6,6 +6,8 @@ namespace Application.Services.Interfaces
 {
     public interface IOrderService : IGenericService<Order, OrderDto>
     {
-
+        Task<bool> CreateOrderAsync(Guid userId);
+        Task<List<OrderDto>> GetUserOrdersAsync(Guid userId);
+        Task<List<OrderDto>> GetAllOrdersAsync();
     }
 }

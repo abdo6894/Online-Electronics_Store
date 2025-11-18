@@ -28,7 +28,7 @@ namespace Infrastructure.Data.Configuration
                    .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(oi => oi.Order)
-                   .WithMany(o => o.OrderItems)
+                   .WithMany(o => o.Items)
                    .HasForeignKey(oi => oi.OrderId)
                    .OnDelete(DeleteBehavior.Cascade);
         }

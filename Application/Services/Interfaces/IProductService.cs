@@ -13,5 +13,7 @@ namespace Application.Services.Interfaces
     {
         Task<List<ProductDto>> GetProductsWithCategory();
         Task<ProductDto> GetProductWithCategoryById(Guid id);
+        Task<bool> AddProduct(ProductDto entity);
+
     }
 }

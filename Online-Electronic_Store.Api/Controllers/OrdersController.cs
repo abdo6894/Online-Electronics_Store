@@ -49,58 +49,11 @@ namespace Online_Electronic_Store.Api.Controllers
                 if (userId == null)
                     return Unauthorized(ApiResponse<string>.FailResponse("Invalid user token"));
 
-                var cartItems = (await _cartService.GetAll())
-                                .Where(c => c.UserId == userId)
-                                .ToList();
-
-                if (!cartItems.Any())
-                    return BadRequest(ApiResponse<string>.FailResponse("Cart is empty"));
-
-                decimal totalAmount = 0;
-                var orderItemsDtos = new List<OrderItemDto>();
-
-                foreach (var ci in cartItems)
-                {
-                    var product = await _productService.GetById(ci.ProductId);
-                    if (product == null)
-                        return BadRequest(ApiResponse<string>.FailResponse($"Product {ci.ProductId} not found"));
-
-                    totalAmount += product.Price * ci.Quantity;
-
-                    orderItemsDtos.Add(new OrderItemDto
-                    {
-                        ProductId = ci.ProductId,
-                        Quantity = ci.Quantity,
-                        UnitPrice = product.Price
-                    });
-                }
-
-                var orderDto = new OrderDto
-                {
-                    UserId = userId,
-                    TotalAmount = totalAmount,
-                    Status = "Pending"
-                };
-
-                var addedOrder = await _orderService.Add(orderDto);
-                if (!addedOrder)
+                var result = await _orderService.CreateOrderAsync(userId.Value);
+                if (!result)
                     return BadRequest(ApiResponse<string>.FailResponse("Failed to create order"));
 
-                // جلب آخر Order مضاف
-                var createdOrder = (await _orderService.GetAll()).Last();
-
-                // إضافة OrderItems
-                foreach (var oi in orderItemsDtos)
-                {
-                    oi.OrderId = createdOrder.Id;
-                    await _orderItemService.Add(oi);
-                }
-
-                // مسح العناصر من Cart
-                foreach (var ci in cartItems)
-                    await _cartService.Delete(ci.Id);
-
-                return Ok(ApiResponse<string>.SuccessResponse($"Order {createdOrder.Id} created successfully"));
+                return Ok(ApiResponse<string>.SuccessResponse("Order created successfully"));
             }
             catch (Exception ex)
             {
@@ -108,6 +61,7 @@ namespace Online_Electronic_Store.Api.Controllers
                 return StatusCode(500, ApiResponse<string>.FailResponse("Internal server error"));
             }
         }
+
 
         [HttpGet("my-orders")]
         public async Task<IActionResult> GetMyOrders()
@@ -117,10 +71,8 @@ namespace Online_Electronic_Store.Api.Controllers
                 var userId = GetUserIdFromClaims();
                 if (userId == null)
                     return Unauthorized(ApiResponse<string>.FailResponse("Invalid user token"));
-                var orders = (await _orderService.GetAll())
-                             .Where(o => o.UserId == userId)
-                             .ToList();
 
+                var orders = await _orderService.GetUserOrdersAsync(userId.Value);
                 return Ok(ApiResponse<List<OrderDto>>.SuccessResponse(orders));
             }
             catch (Exception ex)
@@ -130,13 +82,13 @@ namespace Online_Electronic_Store.Api.Controllers
             }
         }
 
-        [HttpGet("all")]
+        [HttpGet("All-Order")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllOrders()
         {
             try
             {
-                var orders = await _orderService.GetAll();
+                var orders = await _orderService.GetAllOrdersAsync();
                 return Ok(ApiResponse<List<OrderDto>>.SuccessResponse(orders));
             }
             catch (Exception ex)
@@ -145,18 +97,16 @@ namespace Online_Electronic_Store.Api.Controllers
                 return StatusCode(500, ApiResponse<string>.FailResponse("Internal server error"));
             }
         }
+
         private Guid? GetUserIdFromClaims()
         {
-
             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "id")?.Value;
             if (Guid.TryParse(userIdClaim, out var userId))
                 return userId;
 
             return null;
-        } 
+        }
+
         #endregion
-
     }
-     
-
-    }
+}

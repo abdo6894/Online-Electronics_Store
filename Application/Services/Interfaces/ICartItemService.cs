@@ -6,6 +6,7 @@ namespace Application.Services.Interfaces
 {
     public interface ICartItemService : IGenericService<CartItem, CartItemDto>
     {
-
+        Task<List<CartItemDto>> GetUserCart(Guid userId);
+        Task<bool> AddToCart(AddToCartDto dto, Guid userId);
     }
 }

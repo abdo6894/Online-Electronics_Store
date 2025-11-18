@@ -15,7 +15,7 @@ namespace Domain
 
             public decimal TotalAmount { get; set; }
 
-            public virtual ICollection<OrderItem>? OrderItems { get; set; }
+            public virtual ICollection<OrderItem>? Items { get; set; }
             public string Status { get; set; } = "Pending"; // Pending, Shipped, Completed, Cancelled
         }
     }

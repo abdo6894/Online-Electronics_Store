@@ -72,7 +72,7 @@ namespace Online_Electronic_Store.Api.Controllers
             try
             {
                 _logger.LogInformation("Creating new Product");
-                var result = await _ProductService.Add(dto);
+                var result = await _ProductService.AddProduct(dto);
                 if (!result)
                     return BadRequest(ApiResponse<string>.FailResponse("Failed to create Product"));
 
