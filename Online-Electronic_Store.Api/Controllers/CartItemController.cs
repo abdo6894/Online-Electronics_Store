@@ -42,9 +42,8 @@ namespace Online_Electronic_Store.Api.Controllers
                 if (userId == null)
                     return Unauthorized(ApiResponse<string>.FailResponse("Invalid user token"));
 
-                var cartItems = (await _cartService.GetAll())
-                                .Where(c => c.UserId == userId)
-                                .ToList();
+                var cartItems = (await _cartService.GetUserCart(userId.Value));
+
 
                 return Ok(ApiResponse<List<CartItemDto>>.SuccessResponse(cartItems));
             }
@@ -56,7 +55,7 @@ namespace Online_Electronic_Store.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] CartItemDto dto)
+        public async Task<IActionResult> Add([FromBody] AddToCartDto dto)
         {
             try
             {
@@ -64,10 +63,8 @@ namespace Online_Electronic_Store.Api.Controllers
                 if (userId == null)
                     return Unauthorized(ApiResponse<string>.FailResponse("Invalid user token"));
 
-                // تأكد إن المنتج موجود قبل الإضافة لو عندك ProductService
-                dto.UserId = userId;
 
-                var result = await _cartService.Add(dto);
+                var result = await _cartService.AddToCart(dto,userId.Value);
                 if (!result)
                     return BadRequest(ApiResponse<string>.FailResponse("Failed to add item to cart"));
 

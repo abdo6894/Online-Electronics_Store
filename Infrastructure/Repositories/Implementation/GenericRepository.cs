@@ -44,29 +44,28 @@ namespace Infrastructure.Repositories.Implementations
             }
         }
 
-        public async Task<bool> Delete(Guid Id)
-        {
-            try
+            public async Task<bool> Delete(Guid id)
             {
-                var entity = _dbSet.Local.FirstOrDefault(e => e.Id == Id);
-                if (entity == null)
+                try
                 {
-                    // جرب Find بدل GetById لتجيب الكائن متتبع أو جديد مباشرة
-                    entity = await _dbSet.FindAsync(Id);
-                }
-                if (entity != null)
-                {
-                    _dbSet.Remove(entity);
+                    // Load entity with all children (Cascade will work correctly)
+                    var entity = await _dbSet
+                        .AsQueryable()
+                        .FirstOrDefaultAsync(e => e.Id == id);
+
+                    if (entity == null)
+                        return false;
+
+                    _context.Remove(entity);
                     await _context.SaveChangesAsync();
                     return true;
                 }
-                return false;
+                catch (Exception ex)
+                {
+                    throw new DataAccessException(ex, $"Error deleting entity of type {typeof(T).Name}", _log);
+                }
             }
-            catch (Exception ex)
-            {
-                throw new DataAccessException(ex, $"Error Deleting for entity of type {typeof(T).Name}", _log);
-            }
-        }
+
 
 
         public async Task<List<T>> GetAll()

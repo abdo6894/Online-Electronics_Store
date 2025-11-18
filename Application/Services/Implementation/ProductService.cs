@@ -38,6 +38,15 @@ namespace Application.Services.Implementation
 
             return _mapper.Map<Product, ProductDto>(product);
         }
+        public async Task<bool> AddProduct(ProductDto dto)
+        {
+            var product = _mapper.Map<ProductDto, Product>(dto);
+
+            product.Category = null;
+
+            return await _productRepository.Add(product);
+        }
+
     }
 
 }

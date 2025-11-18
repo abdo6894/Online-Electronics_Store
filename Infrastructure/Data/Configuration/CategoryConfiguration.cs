@@ -16,7 +16,6 @@ namespace Infrastructure.Data.Configuration
             builder.ToTable("Categories");
 
             builder.HasKey(c => c.Id);
-
             builder.Property(c => c.Name)
                    .HasMaxLength(100)
                    .IsRequired(false);
@@ -24,7 +23,7 @@ namespace Infrastructure.Data.Configuration
             builder.HasMany(c => c.Products)
                    .WithOne(p => p.Category)
                    .HasForeignKey(p => p.CategoryId)
-                   .OnDelete(DeleteBehavior.Cascade);
+                   .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

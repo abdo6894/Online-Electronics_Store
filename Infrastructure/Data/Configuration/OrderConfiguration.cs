@@ -28,7 +28,7 @@ namespace Infrastructure.Data.Configuration
                    .HasForeignKey(o => o.UserId)
                    .OnDelete(DeleteBehavior.Restrict);
 
-            builder.HasMany(o => o.OrderItems)
+            builder.HasMany(o => o.Items)
                    .WithOne(oi => oi.Order)
                    .HasForeignKey(oi => oi.OrderId)
                    .OnDelete(DeleteBehavior.Cascade);

@@ -14,6 +14,7 @@ namespace Online_Electronic_Store.Api.Controllers
         #region Fields
         private readonly IUserService _userService;
         #endregion
+
         #region Constructor
         public AuthenticationController(IUserService userService) { _userService = userService; }
         #endregion
