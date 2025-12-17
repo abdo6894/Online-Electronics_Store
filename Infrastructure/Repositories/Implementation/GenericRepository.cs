@@ -44,13 +44,11 @@ namespace Infrastructure.Repositories.Implementations
             }
         }
 
-            public async Task<bool> Delete(Guid id)
+        public async Task<bool> Delete(Guid id)
             {
                 try
                 {
-                    // Load entity with all children (Cascade will work correctly)
                     var entity = await _dbSet
-                        .AsQueryable()
                         .FirstOrDefaultAsync(e => e.Id == id);
 
                     if (entity == null)
@@ -65,8 +63,6 @@ namespace Infrastructure.Repositories.Implementations
                     throw new DataAccessException(ex, $"Error deleting entity of type {typeof(T).Name}", _log);
                 }
             }
-
-
 
         public async Task<List<T>> GetAll()
         {

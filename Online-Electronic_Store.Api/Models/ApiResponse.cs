@@ -1,5 +1,7 @@
 ﻿namespace Online_Electronic_Store.Models
 {
+
+    #region ApiResponse
     public class ApiResponse<T>
     {
         public bool Success { get; set; }
@@ -26,5 +28,8 @@
                 Errors = errors
             };
         }
-    }
+    } 
+    #endregion
+
+
 }

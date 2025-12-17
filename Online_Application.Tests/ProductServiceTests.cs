@@ -7,8 +7,6 @@ using Moq;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Online_Application.Tests
@@ -28,19 +26,35 @@ namespace Online_Application.Tests
         }
 
         [Test]
-        public async Task GetProductsWithCategory_ReturnsMappedDtos()
+        public async Task GetListProductWithCategory()
         {
             // Arrange
             var products = new List<Product>
             {
-                new Product { Id = Guid.NewGuid(), Name="Phone"},
-                new Product { Id = Guid.NewGuid(), Name="Laptop"}
+                new Product {
+                    Id = Guid.NewGuid(),
+                    Name = "Phone",
+                    Category = new Category { Id = Guid.NewGuid(), Name = "Electronics" }
+                },
+                new Product {
+                    Id = Guid.NewGuid(),
+                    Name = "Laptop",
+                    Category = new Category { Id = Guid.NewGuid(), Name = "Electronics" }
+                }
             };
 
             var mappedProducts = new List<ProductDto>
             {
-                new ProductDto { Id = products[0].Id, Name="Phone"},
-                new ProductDto { Id = products[1].Id, Name="Laptop"}
+                new ProductDto {
+                    Id = products[0].Id,
+                    Name = "Phone",
+                    CategoryName = "Electronics"
+                },
+                new ProductDto {
+                    Id = products[1].Id,
+                    Name = "Laptop",
+                    CategoryName = "Electronics"
+                }
             };
 
             _productRepoMock!
@@ -58,17 +72,33 @@ namespace Online_Application.Tests
             Assert.That(result, Is.Not.Null);
             Assert.That(result.Count, Is.EqualTo(2));
             Assert.That(result[0].Name, Is.EqualTo("Phone"));
-
+            Assert.That(result[0].CategoryName, Is.EqualTo("Electronics")); 
         }
 
 
         [Test]
-        public async Task GetProductWithCategoryById_ReturnsMappedDto()
+        public async Task GetProductWithCategoryById()
         {
             // Arrange
             var id = Guid.NewGuid();
-            var product = new Product { Id = id, Name = "TV" };
-            var mappedProduct = new ProductDto { Id = id, Name = "TV" };
+
+            var product = new Product
+            {
+                Id = id,
+                Name = "TV",
+                Category = new Category
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Home Appliances"
+                }
+            };
+
+            var mappedProduct = new ProductDto
+            {
+                Id = id,
+                Name = "TV",
+                CategoryName = "Home Appliances"
+            };
 
             _productRepoMock!
                 .Setup(r => r.GetByIdWithCategoryAsync(id))
@@ -82,11 +112,10 @@ namespace Online_Application.Tests
             var result = await _productService!.GetProductWithCategoryById(id);
 
             // Assert
-            // Assert
             Assert.That(result, Is.Not.Null);
             Assert.That(result.Id, Is.EqualTo(id));
             Assert.That(result.Name, Is.EqualTo("TV"));
-
+            Assert.That(result.CategoryName, Is.EqualTo("Home Appliances")); // ✔️ أهم خطّ
         }
     }
 }

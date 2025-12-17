@@ -33,6 +33,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Domain\\Domain.csproj"
+              },
               "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Infrastructure\\Infrastructure.csproj"
               }

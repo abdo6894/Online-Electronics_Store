@@ -41,7 +41,6 @@ namespace Application.Services.Implementation
 
             decimal totalAmount = 0;
 
-            // 1) Create empty Order first
             var order = new Order
             {
                 Id = Guid.NewGuid(),
@@ -53,7 +52,6 @@ namespace Application.Services.Implementation
 
             await _orderRepository.Add(order);
 
-            // 2) Now create order items WITH OrderId
             foreach (var ci in cartItems)
             {
                 var product = await _productService.GetById(ci.ProductId);
@@ -63,7 +61,7 @@ namespace Application.Services.Implementation
                 var orderItem = new OrderItem
                 {
                     Id = Guid.NewGuid(),
-                    OrderId = order.Id,  // ✔ مهم جداً
+                    OrderId = order.Id,  
                     ProductId = ci.ProductId,
                     Quantity = ci.Quantity,
                     UnitPrice = product.Price
@@ -74,11 +72,10 @@ namespace Application.Services.Implementation
                 await _orderItemRepository.Add(orderItem);
             }
 
-            // 3) Update Order TotalAmount
             order.TotalAmount = totalAmount;
             await _orderRepository.Update(order);
 
-            // 4) Clear Cart
+
             foreach (var ci in cartItems)
                 await _cartService.Delete(ci.Id);
 
@@ -105,8 +102,6 @@ namespace Application.Services.Implementation
 
             return result;
         }
-
-
 
         public async Task<List<OrderDto>> GetUserOrdersAsync(Guid userId)
         {

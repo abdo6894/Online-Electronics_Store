@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\controllers\\cartitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\controllers\\cartitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|d:\\myprojects\\wepapi\\online-electronic_store.api\\online-electronic_store.api\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB412398-D075-42BD-8EF2-48B9248CB32E}|Online-Electronic_Store.Api\\Online-Electronic_Store.Api.csproj|solutionrelative:online-electronic_store.api\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +35,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartItemController.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\CartItemController.cs",
+              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Controllers\\CartItemController.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Controllers\\CartItemController.cs",
+              "RelativeToolTip": "Online-Electronic_Store.Api\\Controllers\\CartItemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T16:12:23.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Online-Electronic_Store.Api\\Models\\ApiResponse.cs",
+              "ToolTip": "D:\\MyProjects\\WepAPI\\Online-Electronic_Store.Api\\Online-Electronic_Store.Api\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "Online-Electronic_Store.Api\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T15:54:57.232Z"
             }
           ]
         },
